@@ -1,13 +1,13 @@
-#include "ev/event_router.hpp"
+#include "evrte/event_router.hpp"
 #include <iostream>
 
 
-class ComponentA : public ev::EventHandlerInterface
+class ComponentA : public evrte::EventHandlerInterface
 {
-    ev::EventRouter * event_router_;
+    evrte::EventRouter * event_router_;
 
 public:
-    explicit ComponentA(ev::EventRouter & event_router)
+    explicit ComponentA(evrte::EventRouter & event_router)
     {
         event_router_ = &event_router;
         event_router_->add_event_handler(1, *this);
@@ -18,7 +18,7 @@ public:
         event_router_->remove_event_handler(*this);
     }
 
-    void handle_event(const ev::BaseEvent & event) override
+    void handle_event(const evrte::BaseEvent & event) override
     {
         std::cout << "Hello";
     }
@@ -27,11 +27,11 @@ public:
 
 int main(int argc, char ** argv)
 {
-    ev::EventRouter router;
+    evrte::EventRouter router;
 
     ComponentA a(router);
 
-    router.post(ev::BaseEvent(1));
+    router.post(evrte::BaseEvent(1));
 
     return EXIT_SUCCESS;
 }

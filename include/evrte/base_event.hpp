@@ -1,10 +1,10 @@
-#ifndef EV_BASE_EVENT_HPP
-#define EV_BASE_EVENT_HPP
+#ifndef EVRTE_BASE_EVENT_HPP
+#define EVRTE_BASE_EVENT_HPP
 
 #include <cstdint>
 
 
-namespace ev
+namespace evrte
 {
     class BaseEvent
     {
@@ -23,4 +23,4 @@ namespace ev
     };
 }
 
-#endif // EV_BASE_EVENT_HPP
+#endif // EVRTE_BASE_EVENT_HPP

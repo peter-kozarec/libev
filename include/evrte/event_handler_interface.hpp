@@ -1,10 +1,10 @@
-#ifndef EV_EVENT_HANDLER_INTERFACE_HPP
-#define EV_EVENT_HANDLER_INTERFACE_HPP
+#ifndef EVRTE_EVENT_HANDLER_INTERFACE_HPP
+#define EVRTE_EVENT_HANDLER_INTERFACE_HPP
 
-#include "ev/base_event.hpp"
+#include "evrte/base_event.hpp"
 
 
-namespace ev
+namespace evrte
 {
     class EventHandlerInterface
     {
@@ -15,4 +15,4 @@ namespace ev
     };
 }
 
-#endif // EV_EVENT_HANDLER_INTERFACE_HPP
+#endif // EVRTE_EVENT_HANDLER_INTERFACE_HPP

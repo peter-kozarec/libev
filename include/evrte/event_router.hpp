@@ -1,13 +1,13 @@
-#ifndef EV_HUB_HPP
-#define EV_HUB_HPP
+#ifndef EVRTE_HUB_HPP
+#define EVRTE_HUB_HPP
 
-#include "ev/base_event.hpp"
-#include "ev/event_handler_interface.hpp"
+#include "evrte/base_event.hpp"
+#include "evrte/event_handler_interface.hpp"
 #include <cstdint>
 #include <list>
 
 
-namespace ev
+namespace evrte
 {
     class EventRouter final
     {
@@ -29,4 +29,4 @@ namespace ev
     };
 }
 
-#endif // EV_HUB_HPP
+#endif // EVRTE_HUB_HPP
