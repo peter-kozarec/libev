@@ -37,6 +37,12 @@ Follow these steps to build the libio library:
    cmake --build .
    ```
 
+5. Install the library:
+
+   ```bash
+   cmake --build . --target install
+   ```
+
 ## Usage
 
 To use the libevrte library in your C++ project, using cmake:
