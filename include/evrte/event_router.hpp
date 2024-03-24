@@ -1,5 +1,5 @@
-#ifndef EVRTE_HUB_HPP
-#define EVRTE_HUB_HPP
+#ifndef EVRTE_EVENT_ROUTER_HPP
+#define EVRTE_EVENT_ROUTER_HPP
 
 #include "evrte/base_event.hpp"
 #include "evrte/event_handler_interface.hpp"
@@ -29,4 +29,4 @@ namespace evrte
     };
 }
 
-#endif // EVRTE_HUB_HPP
+#endif // EVRTE_EVENT_ROUTER_HPP
