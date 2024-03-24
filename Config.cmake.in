@@ -1,0 +1,13 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+include("${CMAKE_CURRENT_LIST_DIR}/libevrteTargets.cmake")
+
+# Config file version
+include("${CMAKE_CURRENT_LIST_DIR}/libevrteConfigVersion.cmake")
+
+set(LIBEVRTE_LIBRARIES evrte)
+
+
+# Import targets
+set_property(TARGET evrte APPEND PROPERTY INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_INSTALL_PREFIX}/include")
