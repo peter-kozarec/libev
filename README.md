@@ -3,7 +3,7 @@
 
 ## Prerequisites
 
-Before building and using the io library, make sure you have the following dependencies installed:
+Before building and using the evrte library, make sure you have the following dependencies installed:
 
 - CMake (version 3.15 or higher)
 
