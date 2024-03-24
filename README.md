@@ -51,14 +51,11 @@ To use the libevrte library in your C++ project, using cmake:
 cmake_minimum_required(VERSION 3.15)
 project(libevrte_test)
 
-set(CMAKE_CXX_STANDARD 20)
-
 find_package(libevrte REQUIRED)
 
 add_executable(libevrte_test main.cpp)
 
 target_link_libraries(libevrte_test PRIVATE ${LIBEVRTE_LIBRARIES})
-target_compile_options(libevrte_test PRIVATE "-fcoroutines")
    ```
 
 ## Example
