@@ -28,7 +28,6 @@ public:
 int main(int argc, char ** argv)
 {
     evrte::EventRouter router;
-
     ComponentA a(router);
 
     router.post(evrte::BaseEvent(1));

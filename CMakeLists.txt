@@ -6,5 +6,5 @@ set(CMAKE_CXX_STANDARD 20)
 add_subdirectory(libs/libevrte)
 
 if (BUILD_EXAMPLES)
-    add_subdirectory(examples/component_example)
+    add_subdirectory(examples/libevrte_example)
 endif()
